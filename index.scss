@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.head-photo {
+  background-image: url("https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_large_full_cover-v4/image_uploads/c9c6988c-a2f9-434e-a8c7-3777d81289f7/original.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  margin-bottom: 160px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  word-break: break-word;
+  line-height: 2rem;
+  color: #333333;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1rem 10rem 5rem;
+  h2 {
+    margin: 0 auto 1.5rem;
+  }
+}
+
+.campus {
+  img {
+    display: block;
+    margin: 3rem auto;
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+.jobs {
+  .job-inner {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    line-height: 2rem;
+    font-weight: 400;
+    font-size: 21px;
+    div {
+      padding: 2%;
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: space-between;
+      .job-title {
+        font-weight: bold;
+      }
+      .job-location {
+        font-size: 1.2rem;
+        color: #bababa;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    min-height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    cursor: pointer;
+    &:hover {
+      background-color: #f2f2f2;
+      color: #18c3aa;
+    }
+  }
+}
+
+.custom-footer {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    margin: 0;
+    max-width: 100%;
+    height: auto !important;
+  }
+  a {
+    color: #666666;
+    text-decoration: none;
+  }
+}
+
+.clone-footer {
+  min-height: 30vh;
+  padding: 4rem 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #5a6972;
+    font-family: "Lobster", cursive;
+  }
+  p {
+    font-size: 1rem;
+    color: #666666;
+  }
+  a {
+    text-decoration: underline;
+    color: #666666;
+  }
+}
+
+nav {
+  width: 100%;
+  min-height: 10vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.burger-slider {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  hr {
+    width: 1.5rem;
+    margin: 6px;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  span {
+    padding-top: 15px;
+    color: rgb(204, 197, 197);
+    text-shadow: 1px;
+  }
+}
+
+.burger-slider-click {
+  .middle {
+    transform: translateX(-300%);
+  }
+  .top {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .bottom {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  animation: normal;
+}
+
+.burger {
+  padding: 10px;
+}
+
+.real-nav {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: black;
+  position: fixed;
+  opacity: 0;
+  a {
+    font-size: 40px;
+    display: block;
+    padding: 1rem 5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      // background-color: #18c3aa;
+      background: linear-gradient(to right, #18c3aa, #18c3aa, black);
+    }
+  }
+
+  // transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transition: all 1s ease;
+}

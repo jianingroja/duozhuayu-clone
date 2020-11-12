@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.head-photo {
+  background-image: url("https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_large_full_cover-v4/image_uploads/c9c6988c-a2f9-434e-a8c7-3777d81289f7/original.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  margin-bottom: 160px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  word-break: break-word;
+  line-height: 2rem;
+  color: #333333;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 1rem 10rem 5rem;
+}
+
+section h2 {
+  margin: 0 auto 1.5rem;
+}
+
+.campus img {
+  display: block;
+  margin: 3rem auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.jobs .job-inner {
+  margin: 0;
+}
+
+.jobs li {
+  list-style: none;
+  line-height: 2rem;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.jobs li div {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jobs li div .job-title {
+  font-weight: bold;
+}
+
+.jobs li div .job-location {
+  font-size: 1.2rem;
+  color: #bababa;
+}
+
+.jobs a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  min-height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+  cursor: pointer;
+}
+
+.jobs a:hover {
+  background-color: #f2f2f2;
+  color: #18c3aa;
+}
+
+.custom-footer {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.custom-footer img {
+  margin: 0;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.custom-footer a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.clone-footer {
+  min-height: 30vh;
+  padding: 4rem 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clone-footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #5a6972;
+  font-family: "Lobster", cursive;
+}
+
+.clone-footer p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.clone-footer a {
+  text-decoration: underline;
+  color: #666666;
+}
+
+nav {
+  width: 100%;
+  min-height: 10vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.burger-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.burger-slider hr {
+  width: 1.5rem;
+  margin: 6px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.burger-slider span {
+  padding-top: 15px;
+  color: #ccc5c5;
+  text-shadow: 1px;
+}
+
+.burger-slider-click {
+  -webkit-animation: normal;
+          animation: normal;
+}
+
+.burger-slider-click .middle {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+
+.burger-slider-click .top {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+.burger-slider-click .bottom {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+
+.burger {
+  padding: 10px;
+}
+
+.real-nav {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: black;
+  position: fixed;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.real-nav a {
+  font-size: 40px;
+  display: block;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.real-nav a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#18c3aa), color-stop(#18c3aa), to(black));
+  background: linear-gradient(to right, #18c3aa, #18c3aa, black);
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*# sourceMappingURL=index.css.map */
