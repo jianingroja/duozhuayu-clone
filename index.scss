@@ -18,6 +18,9 @@ body {
   background-position: center;
   min-height: 60vh;
   margin-bottom: 160px;
+  @media screen and (max-width: 480px) {
+    background-image: url("https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_medium-v4/image_uploads/c9c6988c-a2f9-434e-a8c7-3777d81289f7/original.png");
+  }
 }
 
 h2 {
@@ -27,6 +30,9 @@ h2 {
   color: #333333;
   margin-bottom: 1.5rem;
   text-align: center;
+  @media screen and (max-width: 414px) {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -37,6 +43,9 @@ p {
   word-break: break-word;
   line-height: 2rem;
   color: #333333;
+  @media screen and (max-width: 414px) {
+    font-size: 1rem;
+  }
 }
 
 section {
@@ -47,6 +56,9 @@ section {
   padding: 1rem 10rem 5rem;
   h2 {
     margin: 0 auto 1.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1rem 3rem 3rem;
   }
 }
 
@@ -68,8 +80,11 @@ section {
     line-height: 2rem;
     font-weight: 400;
     font-size: 21px;
+    @media screen and (max-width: 414px) {
+      font-size: 1rem;
+    }
     div {
-      padding: 2%;
+      padding: 3%; //垂直居中
       display: flex;
       flex-direction: row;
       flex: 1;
@@ -80,6 +95,9 @@ section {
       .job-location {
         font-size: 1.2rem;
         color: #bababa;
+        @media screen and (max-width: 414px) {
+          font-size: 0.8rem;
+        }
       }
     }
     a {
@@ -93,6 +111,9 @@ section {
       &:hover {
         background-color: #f2f2f2;
         color: #18c3aa;
+      }
+      @media screen and (max-width: 414px) {
+        min-height: 6vh;
       }
     }
   }

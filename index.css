@@ -19,6 +19,12 @@ body {
   margin-bottom: 160px;
 }
 
+@media screen and (max-width: 480px) {
+  .head-photo {
+    background-image: url("https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_medium-v4/image_uploads/c9c6988c-a2f9-434e-a8c7-3777d81289f7/original.png");
+  }
+}
+
 h2 {
   font-size: 3rem;
   font-weight: 700;
@@ -26,6 +32,12 @@ h2 {
   color: #333333;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -36,6 +48,12 @@ p {
   word-break: break-word;
   line-height: 2rem;
   color: #333333;
+}
+
+@media screen and (max-width: 414px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 section {
@@ -59,6 +77,12 @@ section h2 {
   margin: 0 auto 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    padding: 1rem 3rem 3rem;
+  }
+}
+
 .campus img {
   display: block;
   margin: 3rem auto;
@@ -77,8 +101,14 @@ section h2 {
   font-size: 21px;
 }
 
+@media screen and (max-width: 414px) {
+  .jobs li {
+    font-size: 1rem;
+  }
+}
+
 .jobs li div {
-  padding: 2%;
+  padding: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +133,12 @@ section h2 {
   color: #bababa;
 }
 
+@media screen and (max-width: 414px) {
+  .jobs li div .job-location {
+    font-size: 0.8rem;
+  }
+}
+
 .jobs li a {
   text-decoration: none;
   color: black;
@@ -116,6 +152,12 @@ section h2 {
 .jobs li a:hover {
   background-color: #f2f2f2;
   color: #18c3aa;
+}
+
+@media screen and (max-width: 414px) {
+  .jobs li a {
+    min-height: 6vh;
+  }
 }
 
 .custom-footer {
