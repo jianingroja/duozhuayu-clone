@@ -6,11 +6,16 @@ window.onload = function () {
   button.addEventListener("click", () => {
     if (isShown) {
       burger.classList.remove("show");
-
+      setTimeout(() => {
+        burger.classList.remove("block");
+      }, 500);
       button.classList.remove("burger-slider-click");
       isShown = !isShown;
     } else {
-      burger.classList.add("show");
+      burger.classList.add("block");
+      setTimeout(() => {
+        burger.classList.add("show");
+      }, 100);
       button.classList.add("burger-slider-click");
       isShown = !isShown;
     }
