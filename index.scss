@@ -82,18 +82,18 @@ section {
         color: #bababa;
       }
     }
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    min-height: 10vh;
-    width: 100%;
-    border-bottom: 1px solid #d4d4d4;
-    cursor: pointer;
-    &:hover {
-      background-color: #f2f2f2;
-      color: #18c3aa;
+    a {
+      text-decoration: none;
+      color: black;
+      display: inline-block;
+      min-height: 10vh;
+      width: 100%;
+      border-bottom: 1px solid #d4d4d4;
+      cursor: pointer;
+      &:hover {
+        background-color: #f2f2f2;
+        color: #18c3aa;
+      }
     }
   }
 }
@@ -169,7 +169,7 @@ nav {
 
 .burger-slider-click {
   .middle {
-    transform: translateX(-300%);
+    opacity: 0;
   }
   .top {
     transform: translateY(8px) rotate(45deg);
@@ -190,6 +190,8 @@ nav {
   padding-top: 10vh;
   background-color: black;
   position: fixed;
+  display: none;
+
   opacity: 0;
   a {
     font-size: 40px;
@@ -198,6 +200,7 @@ nav {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    pointer-events: none;
     &:hover {
       // background-color: #18c3aa;
       background: linear-gradient(to right, #18c3aa, #18c3aa, black);
@@ -209,6 +212,10 @@ nav {
 }
 
 .show {
+  display: block;
   opacity: 1;
-  transition: all 1s ease;
+  transition: opacity 0.5s ease;
+  a {
+    pointer-events: visible;
+  }
 }

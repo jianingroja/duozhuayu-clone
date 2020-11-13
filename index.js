@@ -6,6 +6,7 @@ window.onload = function () {
   button.addEventListener("click", () => {
     if (isShown) {
       burger.classList.remove("show");
+
       button.classList.remove("burger-slider-click");
       isShown = !isShown;
     } else {

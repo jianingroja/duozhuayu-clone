@@ -103,7 +103,7 @@ section h2 {
   color: #bababa;
 }
 
-.jobs a {
+.jobs li a {
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -113,7 +113,7 @@ section h2 {
   cursor: pointer;
 }
 
-.jobs a:hover {
+.jobs li a:hover {
   background-color: #f2f2f2;
   color: #18c3aa;
 }
@@ -221,8 +221,7 @@ nav {
 }
 
 .burger-slider-click .middle {
-  -webkit-transform: translateX(-300%);
-          transform: translateX(-300%);
+  opacity: 0;
 }
 
 .burger-slider-click .top {
@@ -245,6 +244,7 @@ nav {
   padding-top: 10vh;
   background-color: black;
   position: fixed;
+  display: none;
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -257,6 +257,7 @@ nav {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .real-nav a:hover {
@@ -265,8 +266,13 @@ nav {
 }
 
 .show {
+  display: block;
   opacity: 1;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.show a {
+  pointer-events: visible;
 }
 /*# sourceMappingURL=index.css.map */
