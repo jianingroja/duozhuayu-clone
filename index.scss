@@ -24,12 +24,13 @@ body {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 700;
   font-family: "Oswald", sans-serif;
   color: #333333;
   margin-bottom: 1.5rem;
   text-align: center;
+  text-rendering: optimizeLegibility;
   @media screen and (max-width: 414px) {
     font-size: 1.5rem;
   }
@@ -43,8 +44,13 @@ p {
   word-break: break-word;
   line-height: 2rem;
   color: #333333;
+  text-rendering: optimizeLegibility;
   @media screen and (max-width: 414px) {
     font-size: 1rem;
+  }
+  &::selection {
+    color: whitesmoke;
+    background-color: #18c3aa;
   }
 }
 
@@ -60,12 +66,9 @@ section {
   @media screen and (max-width: 768px) {
     padding: 1rem 3rem 3rem;
   }
-}
-
-.campus {
   img {
     display: block;
-    margin: 3rem auto;
+    margin: 5rem auto;
     max-width: 100%;
     height: auto !important;
   }
