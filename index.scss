@@ -80,7 +80,7 @@ section {
   }
   li {
     list-style: none;
-    line-height: 2rem;
+    line-height: 30px;
     font-weight: 400;
     font-size: 21px;
     @media screen and (max-width: 414px) {
@@ -92,6 +92,10 @@ section {
       flex-direction: row;
       flex: 1;
       justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: left;
+      }
       .job-title {
         font-weight: bold;
       }
@@ -106,7 +110,7 @@ section {
     a {
       text-decoration: none;
       color: black;
-      display: inline-block;
+      display: block;
       min-height: 10vh;
       width: 100%;
       border-bottom: 1px solid #d4d4d4;

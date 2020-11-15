@@ -108,7 +108,7 @@ section img {
 
 .jobs li {
   list-style: none;
-  line-height: 2rem;
+  line-height: 30px;
   font-weight: 400;
   font-size: 21px;
 }
@@ -136,6 +136,16 @@ section img {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .jobs li div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+}
+
 .jobs li div .job-title {
   font-weight: bold;
 }
@@ -154,7 +164,7 @@ section img {
 .jobs li a {
   text-decoration: none;
   color: black;
-  display: inline-block;
+  display: block;
   min-height: 10vh;
   width: 100%;
   border-bottom: 1px solid #d4d4d4;
