@@ -235,6 +235,10 @@ section img {
   font-family: "Lobster", cursive;
 }
 
+.clone-footer h3 a {
+  text-decoration: none;
+}
+
 .clone-footer p {
   font-size: 1rem;
   color: #666666;
